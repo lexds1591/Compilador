@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1379029391 source:c:\users\lex\desktop\compilador\src\lexico.cpp
+	"../include/Lexico.h"
+
+1379029398 c:\users\lex\desktop\compilador\include\lexico.h
+	<string>
+	<iostream>
+	<cctype>
+
+1379026682 source:c:\users\lex\desktop\compilador\src\tablasimbolos.cpp
+	"../include/TablaSimbolos.h"
+
+1379025511 c:\users\lex\desktop\compilador\include\tablasimbolos.h
+	<string>
+	<iostream>
+
+1379029270 source:c:\users\lex\desktop\compilador\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<string>
+	"include/Lexico.h"
+	"include/funciones.h"
+
+1379026199 c:\users\lex\desktop\compilador\include\funciones.h
+	<cstring>
+	<fstream>
+	<sstream>
+	"TablaSimbolos.h"
+
+1379432584 source:c:\documents and settings\usuario\escritorio\compilador\src\lexico.cpp
+	"../include/Lexico.h"
+	<cctype>
+	<algorithm>
+
+1379432533 c:\documents and settings\usuario\escritorio\compilador\include\lexico.h
+	<string>
+	<iostream>
+	<cctype>
+
+1379026682 source:c:\documents and settings\usuario\escritorio\compilador\src\tablasimbolos.cpp
+	"../include/TablaSimbolos.h"
+
+1379025511 c:\documents and settings\usuario\escritorio\compilador\include\tablasimbolos.h
+	<string>
+	<iostream>
+
+1379432740 source:c:\documents and settings\usuario\escritorio\compilador\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<string>
+	"include/Lexico.h"
+	"include/funciones.h"
+
+1379429251 c:\documents and settings\usuario\escritorio\compilador\include\funciones.h
+	<cstring>
+	<fstream>
+	<sstream>
+	"TablaSimbolos.h"
+
