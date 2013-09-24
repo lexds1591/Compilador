@@ -30,22 +30,6 @@ using namespace std;
 class Lexico
 {
     public:
-        /*
-        unsigned int contIdentificador;
-        unsigned int contEntero;
-        unsigned int contReal;
-        unsigned int contCadena;
-        unsigned int contAdicion;
-        unsigned int contMultiplicacion;
-        unsigned int contAsignacion;
-        unsigned int contRelacional;
-        unsigned int contLogico;
-        unsigned int contParIzq;
-        unsigned int contParDer;
-        unsigned int contLlaveIzq;
-        unsigned int contLlaveDer;
-        unsigned int contDelimitador;
-        */
 
         Lexico( int estado );
         virtual ~Lexico();

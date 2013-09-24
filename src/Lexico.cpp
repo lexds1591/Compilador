@@ -5,20 +5,6 @@
 Lexico::Lexico( int estado )
 {
     estado_             = estado;
-    /*contIdentificador   = 0;
-    contEntero          = 0;
-    contReal            = 0;
-    contCadena          = 0;
-    contAdicion         = 0;
-    contMultiplicacion  = 0;
-    contAsignacion      = 0;
-    contRelacional      = 0;
-    contLogico          = 0;
-    contParIzq          = 0;
-    contParDer          = 0;
-    contLlaveIzq        = 0;
-    contLlaveDer        = 0;
-    contDelimitador     = 0;*/
 
     palabrasReservadas_[0] = "int";
     palabrasReservadas_[1] = "float";

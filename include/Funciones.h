@@ -12,8 +12,6 @@
 string getCadena( char* ruta , char* permisos );
 string getPalabra( string cadena , unsigned int *posicion );
 bool validaEspacio( char espacio );
-/*void escribeSalida( char ruta[] , Lexico lexico );
-string convertInt(int number);*/
 
 string getCadena( char* ruta , char* permisos )
 {
@@ -106,51 +104,5 @@ bool validaEspacio( char espacio )
         return true;
     return false;
 }
-
-/*void escribeSalida( char ruta[] , Lexico lexico )
-{
-
-    ofstream salida;
-    salida.open( ruta , ios::out | ios::trunc );
-
-    salida << convertInt(lexico.contIdentificador ) << " ";
-
-    salida << convertInt(lexico.contEntero ) << " ";
-
-    salida << convertInt(lexico.contReal ) << " ";
-
-    salida << convertInt(lexico.contCadena ) << " ";
-
-    salida << convertInt(lexico.contAdicion ) << " ";
-
-    salida << convertInt(lexico.contMultiplicacion ) << " ";
-
-    salida << convertInt(lexico.contAsignacion ) << " ";
-
-    salida << convertInt(lexico.contRelacional ) << " ";
-
-    salida << convertInt(lexico.contLogico )  << " ";
-
-    salida << convertInt(lexico.contParIzq ) << " ";
-
-    salida << convertInt(lexico.contParDer ) << " ";
-
-    salida << convertInt(lexico.contLlaveIzq ) << " ";
-
-    salida << convertInt(lexico.contLlaveDer ) << " ";
-
-    salida << convertInt(lexico.contDelimitador );
-
-
-    cout << "Archivo salida.txt ha sido creado!" << endl;
-    salida.close();
-}
-
-string convertInt(int number)
-{
-   string String = static_cast<ostringstream*>( &(ostringstream() << number) )->str();
-   return String;
-
-}*/
 
 #endif // FUNCIONES_H_INCLUDED

@@ -1,6 +1,6 @@
 /*@Practica #1
  **Alejandro Duarte Sánchez
- *Seccion:D02
+ **Alfredo Martinez Corona
  */
 
 #include <iostream>
@@ -38,49 +38,34 @@ int main()
                     cout << "*** ERROR *** No se conoce : " << palabra << endl;
                     break;
             case IDENTIFICADOR:
-                    //lexico.contIdentificador++;
                     break;
             case ENTERO:
-                    //lexico.contEntero++;
                     break;
             case REAL:
-                    //lexico.contReal++;
                     break;
             case CADENA:
-                    //lexico.contCadena++;
                     break;
             case ADICION:
-                    //lexico.contAdicion++;
                     break;
             case MULTIPLICACION:
-                    //lexico.contMultiplicacion++;
                     break;
             case ASIGNACION:
-                    //lexico.contAsignacion++;
                     break;
             case RELACIONAL:
-                    //lexico.contRelacional++;
                     break;
             case LOGICO:
-                    //lexico.contLogico++;
                     break;
             case PARENTESIS_IZQ:
-                    //lexico.contParIzq++;
                     break;
             case PARENTESIS_DER:
-                    //lexico.contParDer++;
                     break;
             case LLAVE_IZQ:
-                    //lexico.contLlaveIzq++;
                     break;
             case LLAVE_DER:
-                    //lexico.contLlaveDer++;
                     break;
             case DELIMITADOR:
-                    //lexico.contDelimitador++;
                     break;
              case RESERVADO:
-                    //lexico.contDelimitador++;
                     cout << "Reservado";
                     break;
             default :
@@ -90,10 +75,9 @@ int main()
         }
         lexico.setEstado( inicial );
 
-    }while( posicion < cadena.length() );
+    } while( posicion < cadena.length() );
 
     //almacenar resultado
     //escribeSalida( rutaSalida , lexico );
-
     return EXIT_SUCCESS;
 }
