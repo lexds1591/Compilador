@@ -30,103 +30,84 @@ void Lexico::analizar( string palabra )
         switch( estado_ )
         {
             case 0: //inicio
-                    if (esReservada(palabra))
-                    {
-                        estado_ = 25;
-                    }
-                    else if( isalpha( palabra[i] ) || palabra[i] == '_' )
-                    {
-                        estado_ = 1;
-                    }
-                    else if( palabra[i] == '+'  || palabra[i] == '-' )
-                    {
-                        estado_ = 2;
-                    }
-                        else if ( isdigit( palabra[i] ) )
-                        {
-                            estado_ = 3;
-                        }
-                            else if ( palabra[i] == '"' )
-                            {
-                                estado_ = 6;
-                            }
-                                else if ( palabra[i] == '*'  || palabra[i] == '/' )
-                                {
-                                    estado_ = 9;
-                                }
-                                    else if ( palabra[i] == '>' || palabra[i] == '<' )
-                                    {
-                                        estado_ = 10;
-                                    }
-                                        else if ( palabra[i] == '!' )
-                                        {
-                                            estado_ = 12;
-                                        }
-                                            else if ( palabra[i] == '&' )
-                                            {
-                                                estado_ = 14;
-                                            }
-                                                else if ( palabra[i] == '|' )
-                                                {
-                                                    estado_ = 16;
-                                                }
-                                                    else if ( palabra[i] == '(' )
-                                                    {
-                                                        estado_ = 18;
-                                                    }
-                                                        else if ( palabra[i] == ')'  )
-                                                        {
-                                                            estado_ = 19;
-                                                        }
-                                                            else if ( palabra[i] == '{' )
-                                                            {
-                                                                estado_ = 20;
-                                                            }
-                                                                else if( palabra[i] == '}' )
-                                                                {
-                                                                    estado_ = 21;
-                                                                }
-                                                                    else if( palabra[i] == '=' )
-                                                                    {
-                                                                        estado_ = 22;
-                                                                    }
-                                                                        else if( palabra[i] == ',' || palabra[i] == ';' )
-                                                                        {
-                                                                            estado_ = 23;
-                                                                        }
-                                                                            else
-                                                                            {
-                                                                                estado_ = 24;
-                                                                            }
+                if (esReservada(palabra))
+                    estado_ = 25;
+
+                else if( isalpha( palabra[i] ) || palabra[i] == '_' )
+                    estado_ = 1;
+
+                else if( palabra[i] == '+'  || palabra[i] == '-' )
+                    estado_ = 2;
+
+                else if ( isdigit( palabra[i] ) )
+                    estado_ = 3;
+
+                else if ( palabra[i] == '"' )
+                    estado_ = 6;
+
+                else if ( palabra[i] == '*'  || palabra[i] == '/' )
+                    estado_ = 9;
+
+                else if ( palabra[i] == '>' || palabra[i] == '<' )
+                    estado_ = 10;
+
+                else if ( palabra[i] == '!' )
+                    estado_ = 12;
+
+                else if ( palabra[i] == '&' )
+                    estado_ = 14;
+
+                else if ( palabra[i] == '|' )
+                    estado_ = 16;
+
+                else if ( palabra[i] == '(' )
+                    estado_ = 18;
+
+                else if ( palabra[i] == ')'  )
+                    estado_ = 19;
+
+                else if ( palabra[i] == '{' )
+                    estado_ = 20;
+
+                else if( palabra[i] == '}' )
+                    estado_ = 21;
+
+                else if( palabra[i] == '=' )
+                    estado_ = 22;
+
+                else if( palabra[i] == ',' || palabra[i] == ';' )
+                    estado_ = 23;
+
+                else
+                    estado_ = 24;
                 break;
+
             case 1://terminal
-                    if( ( isalpha( palabra[i] ) || palabra[i] == '_' )||
-                       isdigit( palabra[i] ) )
-                    {
-                        estado_ = 1;
-                    }
-                    else
-                    {
-                        estado_ = 24;
-                    }
-                    break;
+                if( ( isalpha( palabra[i] ) || palabra[i] == '_' )
+                    || isdigit( palabra[i] ) )
+                    estado_ = 1;
+
+                else
+                    estado_ = 24;
+
+                break;
+
             case 2://terminal
                     break;
+
             case 3://terminal
-                    if( isdigit( palabra[i] ) )
-                    {
-                        estado_ = 3;
-                    }
-                    else if( palabra[i] == '.' )
-                    {
-                        estado_ = 4;
-                    }
-                        else
-                        {
-                            estado_ = 24;
-                        }
-                    break;
-            case 4:
+                if( isdigit( palabra[i] ) )
+                    estado_ = 3;
+
+                else if( palabra[i] == '.' )
+                    estado_ = 4;
+
+                else
+                    estado_ = 24;
+
+                break;
+
+            case 4: ///TODO: continue to make it nice
                     if ( isdigit( palabra[i] ) )
                     {
                         estado_ = 5;
