@@ -78,6 +78,5 @@ int main()
     } while( posicion < cadena.length() );
 
     //almacenar resultado
-    //escribeSalida( rutaSalida , lexico );
     return EXIT_SUCCESS;
 }

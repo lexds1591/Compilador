@@ -1,7 +1,6 @@
 #ifndef LEXICO_H
 #define LEXICO_H
 
-
 #include <string>
 #include <iostream>
 #include <cctype>
@@ -27,10 +26,9 @@
 
 using namespace std;
 
-class Lexico
-{
-    public:
+class Lexico {
 
+    public:
         Lexico( int estado );
         virtual ~Lexico();
 
@@ -38,14 +36,17 @@ class Lexico
         {
             return estado_;
         }
+
         void setEstado( unsigned int val )
         {
             estado_ = val;
         }
+
         int getTipo()
         {
             return tipo_;
         }
+
         void setTipo( int val )
         {
             tipo_ = val;
@@ -59,7 +60,6 @@ class Lexico
         unsigned int estado_;
         int tipo_;
         string palabrasReservadas_[MAXIMO];
-
 };
 
 #endif // LEXICO_H
