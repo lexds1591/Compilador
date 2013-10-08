@@ -1,82 +1,49 @@
-/*@Practica #1
- **Alejandro Duarte Sánchez
- **Alfredo Martinez Corona
+/*@Practica #2
+ *Alejandro Duarte Sánchez
+ *Seccion:D02
  */
 
+/*************************** TO DO *********************************************
+*                                                                              *
+*    1.-Realizar pruebas                                                       *
+*                                                                              *
+*******************************************************************************/
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <string>
 
 #include "include/Lexico.h"
-#include "include/funciones.h"
+#include "include/Sintactico.h"
+#include "include/ArchivoIO.h"
 
 using namespace std;
 
 int main()
 {
     string cadena;
-    int inicial = 0;
-    unsigned int posicion = 0;
+    int estado = 0;
     string palabra;
     char ruta[] = "archivo.txt";
-    //char rutaSalida[]="salida.txt";
+    char rutaSalida[]="salida.txt";
     char permisos[] = "r";
-    cadena = getCadena( ruta ,permisos );
 
-    Lexico lexico( inicial );
+    cadena = leerArchivo( ruta ,permisos );//se obtiene toda la cadena del archivo
 
-    do
+    Lexico lexico( estado , cadena );
+    Sintactico sintactico;
+
+    if( sintactico.analizar( lexico ) == EXITO )//se realiza analisis sintactico
     {
-        palabra = getPalabra( cadena , & posicion);
-        lexico.analizar( palabra );
-
-        //utiliza el entero obtenido para decidir el tipo
-        switch( lexico.getTipo() )
-        {
-            case ERROR:
-                    cout << "*** ERROR *** No se conoce : " << palabra << endl;
-                    break;
-            case IDENTIFICADOR:
-                    break;
-            case ENTERO:
-                    break;
-            case REAL:
-                    break;
-            case CADENA:
-                    break;
-            case ADICION:
-                    break;
-            case MULTIPLICACION:
-                    break;
-            case ASIGNACION:
-                    break;
-            case RELACIONAL:
-                    break;
-            case LOGICO:
-                    break;
-            case PARENTESIS_IZQ:
-                    break;
-            case PARENTESIS_DER:
-                    break;
-            case LLAVE_IZQ:
-                    break;
-            case LLAVE_DER:
-                    break;
-            case DELIMITADOR:
-                    break;
-             case RESERVADO:
-                    cout << "Reservado";
-                    break;
-            default :
-                    cout << "No debe de entrar en esta opcion!(main_1)" << endl;
-                    break;
-
-        }
-        lexico.setEstado( inicial );
-
-    } while( posicion < cadena.length() );
-
-    //almacenar resultado
+        escribeSalida( rutaSalida , 1 );
+    }
+    else
+    {
+        escribeSalida( rutaSalida , 0 );
+        cout << "************** SE ENCONTRARON ERRORES **************" << endl;
+    }
+    #ifdef _WIN32
+            system("pause");
+    #endif
     return EXIT_SUCCESS;
 }

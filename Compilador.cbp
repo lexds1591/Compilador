@@ -32,11 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include\ArchivoIO.h" />
 		<Unit filename="include\Funciones.h" />
 		<Unit filename="include\Lexico.h" />
+		<Unit filename="include\Sintactico.h" />
 		<Unit filename="include\TablaSimbolos.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src\Lexico.cpp" />
+		<Unit filename="src\Sintactico.cpp" />
 		<Unit filename="src\TablaSimbolos.cpp" />
 		<Extensions>
 			<code_completion />

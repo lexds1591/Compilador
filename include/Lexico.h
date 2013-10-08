@@ -1,11 +1,13 @@
 #ifndef LEXICO_H
 #define LEXICO_H
 
+
 #include <string>
 #include <iostream>
 #include <cctype>
 
-#define ERROR          -1
+#define ERROR         -1
+#define EXITO          0
 #define IDENTIFICADOR  1
 #define ENTERO         2
 #define REAL           3
@@ -20,46 +22,51 @@
 #define LLAVE_IZQ      12
 #define LLAVE_DER      13
 #define DELIMITADOR    14
-#define RESERVADO      15
-
-#define MAXIMO 10
 
 using namespace std;
 
-class Lexico {
-
+class Lexico
+{
     public:
-        Lexico( int estado );
-        virtual ~Lexico();
 
-        unsigned int getEstado()
+        Lexico( int estado , string cadena );
+        virtual ~Lexico( void );
+
+        unsigned int getEstado( void )
         {
             return estado_;
         }
-
         void setEstado( unsigned int val )
         {
             estado_ = val;
         }
-
         int getTipo()
         {
             return tipo_;
         }
-
+        string getPalabra( void )
+        {
+            return palabra_;
+        }
+        void setPalabra( string  palabra )
+        {
+            palabra_ = palabra;
+        }
         void setTipo( int val )
         {
             tipo_ = val;
         }
+        void sigPalabra( void );
 
         void analizar( string palabra );
-        bool esReservada( string palabra);
-
     protected:
     private:
         unsigned int estado_;
         int tipo_;
-        string palabrasReservadas_[MAXIMO];
+        unsigned int posicion;
+        string cadena_;
+        string palabra_;
+
 };
 
 #endif // LEXICO_H

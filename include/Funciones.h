@@ -6,44 +6,10 @@
 #include <sstream>
 #include "TablaSimbolos.h"
 
-#define FIN_ARCHIVO 0
-#define TAM         100
-
-string getCadena( char* ruta , char* permisos );
-string getPalabra( string cadena , unsigned int *posicion );
+string producirPalabra( string cadena , unsigned int *posicion );
 bool validaEspacio( char espacio );
 
-string getCadena( char* ruta , char* permisos )
-{
-    FILE * archivo;
-    char cadena[TAM];
-    char caracter;
-    int i = 0;
-
-    archivo = fopen( ruta , permisos );
-
-    if( archivo != NULL )
-    {
-        while( fread( &caracter , sizeof( char ) , 1 ,archivo ) > FIN_ARCHIVO  )
-        {
-            cadena[i] = caracter;
-            i++;
-        }
-
-        cadena[i] = '\0';
-    }
-    else
-    {
-        cout << "No se pudo abrir el archivo: " << ruta << endl;
-        exit(0);
-    }
-
-    fclose( archivo );
-
-    return cadena;
-}
-
-string getPalabra( string cadena , unsigned int *posicion )
+string producirPalabra( string cadena , unsigned int *posicion )
 {
     char palabra[40];
     int contPalabra = 0;
