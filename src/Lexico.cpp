@@ -1,5 +1,7 @@
-#include "../include/Lexico.h"
-#include "../include/Funciones.h"
+#include "Lexico.h"
+#include "Funciones.h"
+
+using namespace std;
 
 Lexico::Lexico( int estado , string cadena )
 {
@@ -15,6 +17,12 @@ Lexico::~Lexico( void )
 
 void Lexico::analizar( string palabra )
 {
+
+    if( palabra == "" )
+    {
+        tipo_ = FIN;
+        return;
+    }
     for( unsigned int i = 0 ; i < palabra.length() && estado_ !=  24 ; i++ )
     {
         switch( estado_ )
@@ -76,7 +84,7 @@ void Lexico::analizar( string palabra )
                                                                     {
                                                                         estado_ = 22;
                                                                     }
-                                                                        else if( palabra[i] == ',' || palabra[i] == ';' )
+                                                                        else if( /*palabra[i] == ',' || */palabra[i] == ';' )
                                                                         {
                                                                             estado_ = 23;
                                                                         }
@@ -259,35 +267,8 @@ void Lexico::analizar( string palabra )
         case 2:
                 tipo_ = ADICION;
                 break;
-        case 3:
-                tipo_ = ENTERO;
-                break;
-        case 5:
-                tipo_ = REAL;
-                break;
-        case 7:
-                tipo_ = CADENA;
-                break;
         case 9:
                 tipo_ = MULTIPLICACION;
-                break;
-        case 10:
-                tipo_ = RELACIONAL;
-                break;
-        case 11:
-                tipo_ = RELACIONAL;
-                break;
-        case 12:
-                tipo_ = LOGICO;
-                break;
-        case 13:
-                tipo_ = RELACIONAL;
-                break;
-        case 15:
-                tipo_ = LOGICO;
-                break;
-        case 17:
-                tipo_ = LOGICO;
                 break;
         case 18:
                 tipo_ = PARENTESIS_IZQ;
@@ -295,22 +276,10 @@ void Lexico::analizar( string palabra )
         case 19:
                 tipo_ = PARENTESIS_DER;
                 break;
-        case 20:
-                tipo_ = LLAVE_IZQ;
-                break;
-        case 21:
-                tipo_ = LLAVE_DER;
-                break;
-        case 22:
-                tipo_ = ASIGNACION;
-                break;
         case 23:
                 tipo_ = DELIMITADOR;
                 break;
-        case 24:
-                tipo_ = ERROR;
-                break;
-        default:
+        case 24:default:
                 tipo_ = ERROR;
                 break;
     }

@@ -8,20 +8,14 @@
 
 #define ERROR         -1
 #define EXITO          0
-#define IDENTIFICADOR  1
-#define ENTERO         2
-#define REAL           3
-#define CADENA         4
-#define ADICION        5
-#define MULTIPLICACION 6
-#define ASIGNACION     7
-#define RELACIONAL     8
-#define LOGICO         9
-#define PARENTESIS_IZQ 10
-#define PARENTESIS_DER 11
-#define LLAVE_IZQ      12
-#define LLAVE_DER      13
-#define DELIMITADOR    14
+
+#define DELIMITADOR     0
+#define ADICION         1
+#define MULTIPLICACION  2
+#define IDENTIFICADOR   3
+#define PARENTESIS_IZQ  4
+#define PARENTESIS_DER  5
+#define FIN             6
 
 using namespace std;
 

@@ -7,6 +7,8 @@
 #define FIN_ARCHIVO 0
 #define TAM         100
 
+using namespace std;
+
 string leerArchivo( char* ruta , char* permisos );
 
 string leerArchivo( char* ruta , char* permisos )
@@ -50,5 +52,4 @@ void escribeSalida( char ruta[] , int dato )
     cout << "Archivo salida.txt ha sido creado!" << endl;
     salida.close();
 }
-
 #endif // ARCHIVOIO_H_INCLUDED

@@ -1,4 +1,6 @@
-#include "../include/TablaSimbolos.h"
+#include "TablaSimbolos.h"
+
+using namespace std;
 
 TablaSimbolos::TablaSimbolos()
 {

@@ -6,6 +6,8 @@
 #include <sstream>
 #include "TablaSimbolos.h"
 
+using namespace std;
+
 string producirPalabra( string cadena , unsigned int *posicion );
 bool validaEspacio( char espacio );
 
@@ -66,7 +68,7 @@ string producirPalabra( string cadena , unsigned int *posicion )
 
 bool validaEspacio( char espacio )
 {
-    if( espacio == ' ' || espacio == '\t' || espacio == '\n')
+    if( espacio == ' ' || espacio == '\t' || espacio == '\n' || espacio == '\r')
         return true;
     return false;
 }
