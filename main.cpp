@@ -13,9 +13,9 @@
 #include <cstdio>
 #include <string>
 
-#include "Lexico.h"
-#include "Sintactico.h"
-#include "ArchivoIO.h"
+#include "include/Lexico.h"
+#include "include/Sintactico.h"
+#include "include/ArchivoIO.h"
 
 using namespace std;
 

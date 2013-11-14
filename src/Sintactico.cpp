@@ -1,4 +1,4 @@
-#include "Sintactico.h"
+#include "../include/Sintactico.h"
 #include <string>
 #include <vector>
 #include <cstdlib>

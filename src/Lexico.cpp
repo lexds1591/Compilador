@@ -1,5 +1,5 @@
-#include "Lexico.h"
-#include "Funciones.h"
+#include "../include/Lexico.h"
+#include "../include/Funciones.h"
 
 using namespace std;
 

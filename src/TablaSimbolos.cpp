@@ -1,4 +1,4 @@
-#include "TablaSimbolos.h"
+#include "../include/TablaSimbolos.h"
 
 using namespace std;
 
