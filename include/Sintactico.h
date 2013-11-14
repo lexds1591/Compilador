@@ -1,14 +1,20 @@
 #ifndef SINTACTICO_H
 #define SINTACTICO_H
 
+
+//Libraries
 #include <iostream>
 #include <string>
-#include "Lexico.h"
 #include <vector>
+    using namespace std;
 
-#define COLUMNAS 9
-#define FILAS    15
-#define REGLAS   7
+//Headers
+#include "Lexico.h"
+
+//Global variables
+#define COLUMNAS        9
+#define FILAS           15
+#define REGLAS          7
 
 #define S               7
 #define E               8
@@ -17,15 +23,15 @@
 #define REDUCCION       1
 
 
-using namespace std;
-
 class Sintactico
 {
     public:
         Sintactico( void );
         virtual ~Sintactico( void );
         int analizar( Lexico lexico , ofstream *acciones );
+
     protected:
+
     private:
         int termino( Lexico *lexico );
         void inicializa( string tabla[COLUMNAS][FILAS] );

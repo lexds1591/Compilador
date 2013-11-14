@@ -1,23 +1,30 @@
-/*@Practica #4
- *Alejandro Duarte Sánchez
- *Seccion:D02
+/*
+ *@subject: Taller de Compiladores
+ *
+ *@author:  Alejandro Duarte SÃ¡nchez
+ *@author:  Alfredo Martinez Corona
  */
+
 
 /*************************** TO DO *********************************************
 *                                                                              *
 *                                                                              *
 *                                                                              *
 *******************************************************************************/
+
+
+//Libraries
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <string>
+using namespace std;
 
+//Headers
 #include "include/Lexico.h"
 #include "include/Sintactico.h"
 #include "include/ArchivoIO.h"
 
-using namespace std;
 
 int main()
 {
@@ -40,6 +47,7 @@ int main()
     {
         escribeSalida( rutaSalida , 1 );
     }
+
     else
     {
         escribeSalida( rutaSalida , 0 );

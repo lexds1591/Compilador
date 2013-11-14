@@ -1,12 +1,14 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
+//Libraries
 #include <cstring>
 #include <fstream>
 #include <sstream>
+
+//Headers
 #include "TablaSimbolos.h"
 
-using namespace std;
 
 string producirPalabra( string cadena , unsigned int *posicion );
 bool validaEspacio( char espacio );

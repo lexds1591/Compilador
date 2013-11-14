@@ -181,7 +181,7 @@
 1380688848 source:c:\users\lex\desktop\compilador_teoria\src\sintactico.cpp
 	"../include/Sintactico.h"
 
-1384439960 source:/home/freddy/Documents/gitProjects/Compilador/main.cpp
+1384444344 source:/home/freddy/Documents/gitProjects/Compilador/main.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -190,26 +190,26 @@
 	"include/Sintactico.h"
 	"include/ArchivoIO.h"
 
-1384438657 /home/freddy/Documents/gitProjects/Compilador/include/Lexico.h
+1384444819 /home/freddy/Documents/gitProjects/Compilador/include/Lexico.h
 	<string>
 	<iostream>
 	<cctype>
 
-1384438657 /home/freddy/Documents/gitProjects/Compilador/include/Sintactico.h
+1384444570 /home/freddy/Documents/gitProjects/Compilador/include/Sintactico.h
 	<iostream>
 	<string>
 	"Lexico.h"
 	<vector>
 
-1384438657 /home/freddy/Documents/gitProjects/Compilador/include/ArchivoIO.h
+1384444281 /home/freddy/Documents/gitProjects/Compilador/include/ArchivoIO.h
 	<fstream>
 	<sstream>
 
-1384439990 source:/home/freddy/Documents/gitProjects/Compilador/src/Lexico.cpp
+1384444504 source:/home/freddy/Documents/gitProjects/Compilador/src/Lexico.cpp
 	"../include/Lexico.h"
 	"../include/Funciones.h"
 
-1384438657 /home/freddy/Documents/gitProjects/Compilador/include/Funciones.h
+1384444727 /home/freddy/Documents/gitProjects/Compilador/include/Funciones.h
 	<cstring>
 	<fstream>
 	<sstream>
@@ -219,11 +219,15 @@
 	<string>
 	<iostream>
 
-1384440002 source:/home/freddy/Documents/gitProjects/Compilador/src/Sintactico.cpp
+1384444009 source:/home/freddy/Documents/gitProjects/Compilador/src/Sintactico.cpp
 	"../include/Sintactico.h"
 	<string>
 	<vector>
 	<cstdlib>
 	<fstream>
 	<sstream>
+
+1384444537 source:/home/freddy/Documents/gitProjects/Compilador/src/TablaSimbolos.cpp
+	"../include/TablaSimbolos.h"
+	<iostream>
 

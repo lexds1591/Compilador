@@ -2,10 +2,13 @@
 #define LEXICO_H
 
 
+//Libraries
 #include <string>
 #include <iostream>
 #include <cctype>
+    using namespace std;
 
+//Global variables
 #define ERROR         -1
 #define EXITO          0
 
@@ -17,7 +20,6 @@
 #define PARENTESIS_DER  5
 #define FIN             6
 
-using namespace std;
 
 class Lexico
 {
@@ -53,14 +55,15 @@ class Lexico
         void sigPalabra( void );
 
         void analizar( string palabra );
+
     protected:
+
     private:
         unsigned int estado_;
         int tipo_;
         unsigned int posicion;
         string cadena_;
         string palabra_;
-
 };
 
 #endif // LEXICO_H

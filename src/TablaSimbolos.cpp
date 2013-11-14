@@ -1,6 +1,7 @@
+//Libraries / Headers
 #include "../include/TablaSimbolos.h"
-
-using namespace std;
+#include <iostream>
+    using namespace std;
 
 TablaSimbolos::TablaSimbolos()
 {
@@ -18,7 +19,7 @@ int TablaSimbolos::validaUnSimbolo( char simbolo )
 
     valor = simbolos_.find(simbolo);
 
-    if( valor != std::string::npos )
+    if( valor != string::npos )
         return valor;
     else
         return -1;
