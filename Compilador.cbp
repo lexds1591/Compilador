@@ -38,6 +38,7 @@
 		<Unit filename="include/Lexico.h" />
 		<Unit filename="include/Nodo.h" />
 		<Unit filename="include/Sintactico.h" />
+		<Unit filename="include/Suma.h" />
 		<Unit filename="include/TablaSimbolos.h" />
 		<Unit filename="include/Terminal.h" />
 		<Unit filename="main.cpp" />
@@ -45,6 +46,7 @@
 		<Unit filename="src/Lexico.cpp" />
 		<Unit filename="src/Nodo.cpp" />
 		<Unit filename="src/Sintactico.cpp" />
+		<Unit filename="src/Suma.cpp" />
 		<Unit filename="src/TablaSimbolos.cpp" />
 		<Unit filename="src/Terminal.cpp" />
 		<Extensions>
