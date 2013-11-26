@@ -231,3 +231,60 @@
 	"../include/TablaSimbolos.h"
 	<iostream>
 
+1384839759 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<string>
+	"include/Lexico.h"
+	"include/Sintactico.h"
+	"include/ArchivoIO.h"
+
+1384839759 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\lexico.h
+	<string>
+	<iostream>
+	<cctype>
+
+1384877778 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\sintactico.h
+	<iostream>
+	<string>
+	<vector>
+	"Lexico.h"
+	"Nodo.h"
+
+1384839759 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\archivoio.h
+	<fstream>
+	<sstream>
+
+1384839759 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\lexico.cpp
+	"../include/Lexico.h"
+	"../include/Funciones.h"
+
+1384839759 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\funciones.h
+	<cstring>
+	<fstream>
+	<sstream>
+	"TablaSimbolos.h"
+
+1384319460 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\tablasimbolos.h
+	<string>
+	<iostream>
+
+1384876377 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\sintactico.cpp
+	<string>
+	<vector>
+	<cstdlib>
+	<fstream>
+	<sstream>
+	"../include/Sintactico.h"
+
+1384839759 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\tablasimbolos.cpp
+	"../include/TablaSimbolos.h"
+	<iostream>
+
+1384877962 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\nodo.h
+	<iostream>
+
+1384877701 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\nodo.cpp
+	"../include/Nodo.h"
+

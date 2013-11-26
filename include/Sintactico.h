@@ -10,6 +10,7 @@
 
 //Headers
 #include "Lexico.h"
+#include "Nodo.h"
 
 //Global variables
 #define COLUMNAS        9
@@ -40,7 +41,9 @@ class Sintactico
 
         string tabla[COLUMNAS][FILAS];
         vector <int> pila;
+        //vector <Nodo> pila;
         int lon[REGLAS];
 };
 
 #endif // SINTACTICO_H
+\

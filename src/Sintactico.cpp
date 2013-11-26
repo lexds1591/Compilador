@@ -204,10 +204,9 @@ int Sintactico::des_red( string accion , int caracter )
         {
             pila.push_back( S );
             pila.push_back( atoi( tabla[S][num].c_str() )  );
+            //Crear arbol
         }
-
         return REDUCCION;
     }
-
     return ERROR;
 }
