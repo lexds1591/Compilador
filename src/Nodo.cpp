@@ -2,7 +2,7 @@
 
 Nodo::Nodo( string simbolo)
 {
-    simbolo_ = simbolo;
+    valor_ = valor;
 }
 
 Nodo::~Nodo()
