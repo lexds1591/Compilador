@@ -1,13 +1,15 @@
 #ifndef EXPRESSION_H
 #define EXPRESSION_H
 
-#include <Nodo.h>
+#include "Expression.h"
 
 
-class Expression : public Nodo
+
+class Expression
 {
     public:
-        Expression( valor );
+        Expression( int valor );
+        Expression( int valor, Expression * izq, Expression * der);
         virtual ~Expression();
         int GetValor() { return valor_; }
         void SetValor( int val ) { valor_ = val; }

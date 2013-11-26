@@ -25,7 +25,6 @@ using namespace std;
 #include "include/Sintactico.h"
 #include "include/ArchivoIO.h"
 
-
 int main()
 {
     string cadena;

@@ -7,15 +7,19 @@
 class Nodo
 {
     public:
-        Nodo( string valor);
+        Nodo( int simbolo);
         virtual ~Nodo();
 
-        int GetValor() { return valor_; }
-        void SetValor(int val) { valor_ = val; }
+        int getSimbolo() { return simbolo_; }
+        void setSimbolo(int simbolo) { simbolo_ = simbolo; }
+        Nodo* getSig() { return sig_; }
+        void setSig(Nodo *sig) { sig_ = sig; }
 
     protected:
     private:
-        int valor_;
+        int simbolo_;
+        Nodo * sig_;
+
 };
 
 #endif // NODO_H

@@ -1,8 +1,8 @@
 #include "../include/Nodo.h"
 
-Nodo::Nodo( string simbolo)
+Nodo::Nodo( int simbolo)
 {
-    valor_ = valor;
+    simbolo_ = simbolo;
 }
 
 Nodo::~Nodo()

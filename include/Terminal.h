@@ -1,10 +1,11 @@
 #ifndef TERMINAL_H
 #define TERMINAL_H
 
-#include <Nodo.h>
+#include "Terminal.h"
+#include <string>
+using namespace std;
 
-
-class Terminal : public Nodo
+class Terminal
 {
     public:
         Terminal();

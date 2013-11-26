@@ -11,18 +11,18 @@
 
 Sintactico::Sintactico( void )
 {
-    lon[0] = 6;
-    lon[1] = 0;
-    lon[2] = 6;
-    lon[3] = 6;
-    lon[4] = 4;
-    lon[5] = 6;
-    lon[6] = 2;
+    lon[0] = 6;//S-> E;
+    lon[1] = 0;//S->
+    lon[2] = 6;//E->E+E
+    lon[3] = 6;//E->E*E
+    lon[4] = 4;//E->+E
+    lon[5] = 6;//E->(E)
+    lon[6] = 2;//E->identificador
 
     inicializa( tabla );
     llenaTabla( tabla );
-
-    pila.push_back( 0 );//primer estado
+    Nodo nodo(0);
+    pila.push_back( nodo );//primer estado
 }
 
 Sintactico::~Sintactico( void )
@@ -42,7 +42,7 @@ int Sintactico::analizar( Lexico lexico , ofstream *acciones )
 
     do
     {
-        accion_valor = tabla[ lexico.getTipo() ][ pila.back() ];
+        accion_valor = tabla[ lexico.getTipo() ][ pila.back().getSimbolo() ];
 
         *acciones << accion_valor << " ";
 
@@ -192,8 +192,30 @@ int Sintactico::des_red( string accion , int caracter )
         /*****************************************
         * se decide cual No-terminal se introduce*
         *****************************************/
-        int num = pila.back();
+        int num = pila.back().getSimbolo();
 
+        switch ( regla )
+        {
+            case 0:
+            break;
+            case 1:
+            break;
+            case 2://suma
+                    Nodo nodo(ADICION);
+                    Expresion expresion()
+                    nodo.setSig();
+            break;
+            case 3:
+            break;
+            case 4:
+            break;
+            case 5:
+            break;
+            case 6:
+            break;
+            case 7:
+            break;
+        }
         if( regla >= 3 && regla <= 7 )
         {
             pila.push_back( E );

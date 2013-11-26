@@ -40,10 +40,9 @@ class Sintactico
         int des_red( string accion , int caracter );
 
         string tabla[COLUMNAS][FILAS];
-        vector <int> pila;
+        vector <Nodo> pila;
         //vector <Nodo> pila;
         int lon[REGLAS];
 };
 
 #endif // SINTACTICO_H
-\

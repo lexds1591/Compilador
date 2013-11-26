@@ -231,7 +231,7 @@
 	"../include/TablaSimbolos.h"
 	<iostream>
 
-1384839759 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\main.cpp
+1385484040 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\main.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -245,7 +245,7 @@
 	<iostream>
 	<cctype>
 
-1384877778 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\sintactico.h
+1385484057 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\sintactico.h
 	<iostream>
 	<string>
 	<vector>
@@ -270,7 +270,7 @@
 	<string>
 	<iostream>
 
-1384876377 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\sintactico.cpp
+1385484579 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\sintactico.cpp
 	<string>
 	<vector>
 	<cstdlib>
@@ -282,9 +282,29 @@
 	"../include/TablaSimbolos.h"
 	<iostream>
 
-1384877962 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\nodo.h
+1385485280 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\nodo.h
 	<iostream>
 
-1384877701 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\nodo.cpp
+1385483735 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\nodo.cpp
 	"../include/Nodo.h"
+
+1385483338 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\expression.cpp
+	"../include/Expression.h"
+	"../include/Nodo.h"
+
+1385483616 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\expression.h
+	"Expression.h"
+
+1385482947 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\terminal.cpp
+	"../include/Terminal.h"
+
+1385483044 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\terminal.h
+	"Terminal.h"
+	<string>
+
+1385484952 source:c:\users\freddy\documents\taller compiladores\gitproject\compilador\src\suma.cpp
+	"../include/Suma.h"
+
+1385485029 c:\users\freddy\documents\taller compiladores\gitproject\compilador\include\suma.h
+	"Nodo.h"
 
